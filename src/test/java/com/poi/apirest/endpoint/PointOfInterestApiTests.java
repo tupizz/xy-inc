@@ -64,7 +64,7 @@ public class PointOfInterestApiTests {
 
 	@Test
 	public void testGetAllNearbyPoiShouldReturnAsExpected() throws Exception {
-		String apiUrl = "/api/poi-nearby?x=20&y=10&d=10";
+		String apiUrl = "/api/poi/near?x=20&y=10&d=10";
 		System.out.println(this.mvc.perform(get(apiUrl)));
 		this.mvc.perform(get(apiUrl)).andDo(print()).andExpect(status().isOk());
 	}

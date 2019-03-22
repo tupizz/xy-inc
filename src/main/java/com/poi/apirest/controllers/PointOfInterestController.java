@@ -35,7 +35,7 @@ public class PointOfInterestController {
 		return ResponseEntity.status(HttpStatus.OK).body(listOfAllPOI);
 	}
 	
-	@GetMapping("/poi-nearby") 
+	@GetMapping("/poi/near") 
 	@ApiOperation(value = "Lista todos os pois dentro de uma distância máxima fornecida")
 	public ResponseEntity<List<PointOfInterest>> listPOIsWithNearby(@RequestParam Integer x, @RequestParam Integer y, @RequestParam Integer d) {
 		List<PointOfInterest> listOfAllPOI = this.pointOfInterestRepository.findNearbyPOIs(x, y, d);
