@@ -33,45 +33,45 @@ A porta 8080 está exposta, e a partir dela é possível acessar a API de resour
 
     Resposta:
 
-        ```json
-            [
-                {
-                    "id": 1,
-                    "x": 27,
-                    "y": 12,
-                    "name": "Lanchonete"
-                },
-                {
-                    "id": 3,
-                    "x": 15,
-                    "y": 12,
-                    "name": "Joalheria"
-                },
-                {
-                    "id": 5,
-                    "x": 23,
-                    "y": 6,
-                    "name": "Supermercado"
-                },
-                {
-                    "id": 6,
-                    "x": 12,
-                    "y": 8,
-                    "name": "Pub"
-                }
-            ]
-        ```
+    ```json
+        [
+            {
+                "id": 1,
+                "x": 27,
+                "y": 12,
+                "name": "Lanchonete"
+            },
+            {
+                "id": 3,
+                "x": 15,
+                "y": 12,
+                "name": "Joalheria"
+            },
+            {
+                "id": 5,
+                "x": 23,
+                "y": 6,
+                "name": "Supermercado"
+            },
+            {
+                "id": 6,
+                "x": 12,
+                "y": 8,
+                "name": "Pub"
+            }
+        ]
+    ```
 
-    - **POST**
-        - **Criação de novo POI:** A partir de http://localhost:8080/poi é possível criar um novo POI, como payload debe ser enviado um objeto JSON, como no exemplo:
-                
-            ```json
-                {
-                    "x": 22,
-                    "y": 17,
-                    "name": "Estádio de futebol"
-                }
-            ```
+- **POST**
+    - **Criação de novo POI:** A partir de http://localhost:8080/poi é possível criar um novo POI, como payload debe ser enviado um objeto JSON, como no exemplo:
+            
+    ```json
+        {
+            "x": 22,
+            "y": 17,
+            "name": "Estádio de futebol"
+        }
+    ```
 
 ## **EXECUTANDO O PROJETO**
 
